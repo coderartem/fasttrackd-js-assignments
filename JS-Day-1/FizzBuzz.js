@@ -15,7 +15,7 @@ const temp = (counter,printEmAll,i=0,msg="")=>{
         return msg;
     }
     if(printEmAll[i]){
-        if(counter%i===0){
+        if(counter%(i+1)===0){
             msg+=printEmAll[i];
         }
     }
